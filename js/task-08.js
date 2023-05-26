@@ -6,14 +6,14 @@ const submitButton = document.querySelector("button");
 loginForm.addEventListener("submit", onSubmitForm);
 inputEmailElem.addEventListener("input", onInput);
 inputPassElem.addEventListener("input", onInput);
-submitButton.addEventListener("click", onSubmitForm);
+submitButton.addEventListener("click", onSubmitButton);
 
 function onSubmitForm(event) {
     event.preventDefault();
 
     const formData = new FormData (event.currentTarget);
     formData.forEach((value, name) => {
-        console.log(`${name}: ${value}`)
+        console.log(`${name}: ${value}`)    
     });
     event.currentTarget.reset()
 }
@@ -31,3 +31,4 @@ function onSubmitButton() {
         alert("Dсі поля повинні бути заповнені")
     }
 };
+

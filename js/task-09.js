@@ -16,4 +16,4 @@ function changeBackground() {
   pageColor.textContent = color;
 }
 
-changeColorButton.addEventListener("click", changeBackground)
+changeColorButton.addEventListener("click", changeBackground);
